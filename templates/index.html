@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ static_url("style.css") }}">
+        <title>Message Classifier</title>
+    </head>
+    <body>
+        <h1>新闻分类识别</h1>
+        <form method="post" action="/result">
+        <p>请输入新闻内容<br>
+            <textarea rows=4 cols=55 name="source"></textarea></p>
+        <p>识别结果<br>
+            <textarea rows=4 cols=55 name="result" readonly="readonly"></textarea></p>
+        <input type="submit">
+        </form>
+    </body>
+</html>
